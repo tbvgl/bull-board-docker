@@ -8,4 +8,4 @@ services:
       context: .
     restart: always
     ports:
-      - "${BULL_DASHBOARD_PORT:-3000}:3000"
+      - "${BULL_DASHBOARD_PORT}:3000"
