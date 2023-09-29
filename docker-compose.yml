@@ -8,7 +8,4 @@ services:
       context: .
     restart: always
     ports:
-      - 3000:3000
-    environment:
-      REDIS_HOST: host
-      REDIS_PASSWORD: pass
+      - "${BULL_DASHBOARD_PORT:-3000}:3000"
