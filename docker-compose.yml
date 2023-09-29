@@ -7,5 +7,3 @@ services:
       dockerfile: ./Dockerfile
       context: .
     restart: always
-    ports:
-      - "${BULL_DASHBOARD_PORT}:3000"
